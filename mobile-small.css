@@ -71,8 +71,6 @@ a:active {
   text-align: right;
   vertical-align: middle;
   overflow: hidden;
-  white-space: nowrap;
-
 }
 
 #headerNav a {
@@ -82,32 +80,16 @@ a:active {
     text-align: left;
 }
 
-#headerMobileNav {
-  display: table-cell;
-  width: 100%;
-  text-align: right;
-  vertical-align: middle;
-  overflow: hidden;
-  padding-right: 40px;
+@media screen and (max-width: 641px)  {}
+    #headerNav
 }
 
-@media screen and (max-width: 700px) {
-    #headerNav {
-      display: none;
-    }
-
-    #headerMobileNav {
-      display: table-cell;
-    }
-}
-
-@media screen and (min-width: 700px) {
-  #headerMobileNav {
-    display: none;
+/* @media (max-width: 1280px) {
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
   }
-}
-
-
+} */
 
 /* 
 #list-element a {
