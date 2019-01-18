@@ -98,8 +98,10 @@ a:active {
   left: 0px;
 } 
 
-#img {
-  max-width: 80%;
+#image-table {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 700px) {
@@ -112,11 +114,30 @@ a:active {
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 701px) {
   #headerMobileNav {
     display: none;
   }
 }
+
+@media (min-width: 200px) {
+  #i1, #i2, #i3, #i4, #i5 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  #i1 {
+    width: 60%;
+  }
+  #i2 {
+    width: 40%;
+  }
+  #i3, #i4, #i5 {
+    width: 33.33%;
+  }
+}
+
 
 
 
