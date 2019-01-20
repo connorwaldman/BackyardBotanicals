@@ -104,6 +104,14 @@ a:active {
   text-align: center;
 }
 
+img {
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
 @media screen and (max-width: 700px) {
     #headerNav {
       display: none;
@@ -122,19 +130,21 @@ a:active {
 
 @media (min-width: 200px) {
   #i1, #i2, #i3, #i4, #i5 {
-    width: 50%;
+    width: 85%;
   }
 }
 
 @media (min-width: 800px) {
-  #i1 {
-    width: 60%;
+  #i1,  {
+    width: 80%;
   }
-  #i2 {
-    width: 40%;
+
+  #i2, #i3, #i4 {
+    width: 25%;
   }
-  #i3, #i4, #i5 {
-    width: 33.33%;
+
+  #i5 {
+    width: 80%;
   }
 }
 
