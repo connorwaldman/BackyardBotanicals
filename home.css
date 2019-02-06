@@ -42,6 +42,7 @@ a:active {
     color: rgba(255, 255, 255, 1); 
     font-size: 24px;
     display: block;
+    text-shadow: 0 1px 0 black;
 }
 
 #main-header {
@@ -97,24 +98,38 @@ a:active {
     padding-right: 30px;
     text-decoration: none;
     /* text-transform: uppercase; */
+    text-shadow: 0 1px 0 black;
     font-size: 17px;
     text-align: left;
     letter-spacing: 0.5px;
+    
 }
 
 #headerMobileNav {
   display: table-cell;
-  width: 100%;
   text-align: right;
   vertical-align: middle;
   overflow: hidden;
-  padding-right: 80px;
   position: absolute;
+  margin-left: 80%;
+  
 }
 
 #links {
     display: none;
+    background-color: rgba(59, 53, 53, 0.61);
+    overflow: hidden;
+    position: fixed;
+    
 }
+
+#links a {
+    color: white;
+    transition: 0.5s;
+    
+}
+
+
 
 #imagebackground {
     background-image: url("images/alleyhouse2-large.jpg");
@@ -163,8 +178,9 @@ h2 {
     }
 
     #headerMobileNav a {
-        padding: 14px 16px;
+        padding: 10px 16px;
         display: block;
+       
     }
 }
 
