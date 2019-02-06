@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body {
   font-family: 'Work Sans', sans-serif;
@@ -38,9 +38,15 @@ a:active {
   color: rgb(0, 0, 0);
 }
 
+.material-icons.light { 
+    color: rgba(255, 255, 255, 1); 
+    font-size: 24px;
+    display: block;
+}
+
 #main-header {
   text-decoration: none;
-  background: rgba(53, 194, 140, 0.918); 
+  /* background: transparent;  */
   padding: 20px 0;
   width: 100%;
   /* -webkit-box-sizing: border-box;
@@ -52,37 +58,48 @@ a:active {
 #logo {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 28px;
-  padding:20px 10px;
+  padding: 20px 10px;
   vertical-align: middle;
   text-align: left;
   display: table-cell;
   white-space: nowrap;
   text-decoration: bold;
+  position: absolute;
+ 
 }
 
 #logo a {
+
     text-align: left;
     white-space: nowrap;
     text-decoration: bold;
+   
   }
   
 
 #headerNav {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
   display: table-cell;
+  padding:20px 10px;
   width: 100%;
   text-align: right;
   vertical-align: middle;
   overflow: hidden;
   white-space: nowrap;
-
+  position: absolute;
+  background-color: rgba(102, 98, 98, 0.342);
 }
 
 #headerNav a {
+    color: white;
     padding: 1%;
     padding-right: 30px;
     text-decoration: none;
+    /* text-transform: uppercase; */
     font-size: 17px;
     text-align: left;
+    letter-spacing: 0.5px;
 }
 
 #headerMobileNav {
@@ -91,7 +108,26 @@ a:active {
   text-align: right;
   vertical-align: middle;
   overflow: hidden;
-  padding-right: 40px;
+  padding-right: 80px;
+  position: absolute;
+}
+
+#links {
+    display: none;
+}
+
+#imagebackground {
+    background-image: url("images/alleyhouse2-large.jpg");
+
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position-y: -340px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
 }
 
 #container {
@@ -124,6 +160,11 @@ h2 {
 
     #headerMobileNav {
       display: table-cell;
+    }
+
+    #headerMobileNav a {
+        padding: 14px 16px;
+        display: block;
     }
 }
 
