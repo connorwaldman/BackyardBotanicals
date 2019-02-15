@@ -6,10 +6,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Backyard Botanicals | Portfolio</title>
+    <title>Backyard Botanicals | Home</title>
 
     <!-- Load Styles -->
-    <link rel="stylesheet" type="text/css"  href="main.css"/>
+    <link rel="stylesheet" type="text/css"  href="home.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     
     <link rel="icon" href="images/favicon16.png">
     <link rel="icon" href="images/favicon32.png">
@@ -18,7 +20,8 @@
 
 <body>
 
-
+<div id=imagebackground>
+        
     <div id="main-header">
         <div id="logo">
             <a href="/index.html" id="logo-link">Backyard Botanicals</a>
@@ -27,26 +30,38 @@
        <div id="headerNav">
                 <div>
                     <a href="/about.html">About</a>
-                    <a href="/">Services</a>
+                    <a href="/services.html">Services</a>
                     <a href="/portfolio.html">Portfolio</a>
-                    <a href="/">Resources</a>
+                    <a href="/resources.html">Resources</a>
                     <a href="/contact.html">Contact</a>
                 </div>
        </div>
 
        <div id="headerMobileNav">
-        <div>
-            <a href="/">MENU</a>
-        </div>
-</div>
 
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="material-icons light">menu</i>
+                </a>
+
+            <div id="links">
+                    <a href="/about.html">About</a>
+                    <a href="/">Services</a>
+                    <a href="/portfolio.html">Portfolio</a>
+                    <a href="/">Resources</a>
+                    <a href="/contact.html">Contact</a>
+            </div>
+        
+           
+       
+</div>
+</div>
 
     </div>
 
     <div id="container">
 
         <h2> PROJECTS </h2>
-
+    
         <div id="image-table">
             <div id="row1">
                 <img id = "i1" src="images/alleyhouse2-large.jpg" srcset="images/alleyhouse2-large.jpg 1x" alt="alley house 2">
@@ -63,8 +78,18 @@
         </div>
     </div>
 
-
     <footer id="main-footer">
     </footer>
+
+    <script>
+            function myFunction() {
+              var x = document.getElementById("links");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
 </body>
 </html>
