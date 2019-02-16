@@ -30,29 +30,27 @@
        <div id="headerNav">
                 <div>
                     <a href="/about.html">About</a>
-                    <a href="/">Services</a>
+                    <a href="/services.html">Services</a>
                     <a href="/portfolio.html">Portfolio</a>
-                    <a href="/">Resources</a>
+                    <a href="/resources.html">Resources</a>
                     <a href="/contact.html">Contact</a>
                 </div>
        </div>
 
        <div id="headerMobileNav">
 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
                     <i class="material-icons light">menu</i>
                 </a>
 
             <div id="links">
-                    <a href="/about.html">About</a>
-                    <a href="/services.html">Services</a>
-                    <a href="/portfolio.html">Portfolio</a>
-                    <a href="/resources.html">Resources</a>
-                    <a href="/contact.html">Contact</a>
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="/about.html">About</a>
+              <a href="/services.html">Services</a>
+              <a href="/portfolio.html">Portfolio</a>
+              <a href="/resources.html">Resources</a>
+              <a href="/contact.html">Contact</a>
             </div>
-        
-           
-       
 </div>
 </div>
 
@@ -95,14 +93,12 @@
     </footer>
 
     <script>
-            function myFunction() {
-              var x = document.getElementById("links");
-              if (x.style.display === "block") {
-                x.style.display = "none";
-              } else {
-                x.style.display = "block";
-              }
-            }
-            </script>
+      function openNav() {
+        document.getElementById("links").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("links").style.width = "0";
+      }        
+    </script>
 </body>
 </html>
