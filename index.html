@@ -1,94 +1,93 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Backyard Botanicals | Home</title>
+  <title>Backyard Botanicals | Home</title>
 
-    <!-- Load Styles -->
-    <link rel="stylesheet" type="text/css"  href="home.css"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    
-    <link rel="icon" href="images/favicon16.png">
-    <link rel="icon" href="images/favicon32.png">
+  <!-- Load Styles -->
+  <link rel="stylesheet" type="text/css" href="home.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="icon" href="images/favicon16.png">
+  <link rel="icon" href="images/favicon32.png">
 
 </head>
 
 <body>
 
-<div id=imagebackground>
-        
+  <div id=imagebackground>
+
     <div id="main-header">
-        <div id="logo">
-            <a href="/index.html" id="logo-link">Backyard Botanicals</a>
+      <div id="logo">
+        <a href="/index.html" id="logo-link">Backyard Botanicals</a>
+      </div>
+
+      <div id="headerNav">
+        <div>
+          <a href="/about.html">About</a>
+          <a href="/services.html">Services</a>
+          <a href="/portfolio.html">Portfolio</a>
+          <a href="/resources.html">Resources</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div id="headerMobileNav">
+
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+          <i class="material-icons light">menu</i>
+        </a>
+
+        <div id="links">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="/about.html">About</a>
+          <a href="/services.html">Services</a>
+          <a href="/portfolio.html">Portfolio</a>
+          <a href="/resources.html">Resources</a>
+          <a href="/contact.html">Contact</a>
         </div>
 
-       <div id="headerNav">
-                <div>
-                    <a href="/about.html">About</a>
-                    <a href="/">Services</a>
-                    <a href="/portfolio.html">Portfolio</a>
-                    <a href="/">Resources</a>
-                    <a href="/contact.html">Contact</a>
-                </div>
-       </div>
 
-       <div id="headerMobileNav">
 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="material-icons light">menu</i>
-                </a>
-
-            <div id="links">
-                    <a href="/about.html">About</a>
-                    <a href="/services.html">Services</a>
-                    <a href="/portfolio.html">Portfolio</a>
-                    <a href="/resources.html">Resources</a>
-                    <a href="/contact.html">Contact</a>
-            </div>
-        
-           
-       
-</div>
-</div>
-
-    </div>
-
-    <div id="container">
-      <div id="main-text">
-        <p>
-          Backyard Botanicals is a small landscape design company that offers landscape design, plant procurement,
-          installation and seasonal maintenance for residential and commercial properties.
-          We specialize in the use of perennial plants, trees, and shrubs that are native to this region of Kentucky.
-          Our designs are intuitive, vibrant and personalized.
-          We have a deep passion for native plants and the healthy ecology of our community.
-          It is our hope that through our work, we can share this passion with others by putting native plants in backyard
-          gardens across the city.
-          <br>
-          <br>
-          Whether you want to add to an existing garden or create a whole new look for your overall landscape, we can help you.
-          If you are interested in talking to us about your project, we would love to hear from you.
-      </p>
       </div>
     </div>
 
+  </div>
 
-    <footer id="main-footer">
-    </footer>
+  <div id="container">
+    <div id="main-text">
+      <p>
+        Backyard Botanicals is a small landscape design company that offers landscape design, plant procurement,
+        installation and seasonal maintenance for residential and commercial properties.
+        We specialize in the use of perennial plants, trees, and shrubs that are native to this region of Kentucky.
+        Our designs are intuitive, vibrant and personalized.
+        We have a deep passion for native plants and the healthy ecology of our community.
+        It is our hope that through our work, we can share this passion with others by putting native plants in backyard
+        gardens across the city.
+        <br>
+        <br>
+        Whether you want to add to an existing garden or create a whole new look for your overall landscape, we can help
+        you.
+        If you are interested in talking to us about your project, we would love to hear from you.
+      </p>
+    </div>
+  </div>
 
-    <script>
-            function myFunction() {
-              var x = document.getElementById("links");
-              if (x.style.display === "block") {
-                x.style.display = "none";
-              } else {
-                x.style.display = "block";
-              }
-            }
-            </script>
+
+  <footer id="main-footer">
+  </footer>
+
+  <script>
+    function openNav() {
+              document.getElementById("links").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("links").style.width = "0";
+    }        
+  </script>
 </body>
+
 </html>
