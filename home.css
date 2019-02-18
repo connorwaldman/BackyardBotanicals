@@ -264,25 +264,33 @@ footer {
 
 @media (min-width: 200px) {
   #i1, #i2, #i3, #i4, #i5 {
-    width: 85%;
+    width: 100%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width: 800px) {
   #i1  {
-    width: 100%;
+    width: 75%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #i2, #i3, #i4 {
-    width: 33.3333%;
+    width: 23.75%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #i5 {
-    width: 100%;
+    width: 75%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
