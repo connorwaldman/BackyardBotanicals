@@ -5,19 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Backyard Botanicals | Home</title>
+    <title>Backyard Botanicals | Resources</title>
 
     <!-- Load Styles -->
     <link rel="stylesheet" type="text/css" href="home.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" href="images/favicon16.png">
     <link rel="icon" href="images/favicon32.png">
 </head>
 
 <body>
 
-    <div id=imagebackground>
+    <div class="imagebackground resources">
 
         <div id="main-header">
             <div id="logo">
@@ -26,8 +27,8 @@
 
             <div id="headerNav">
                 <div>
-                    <a href="/about.html">About</a>
                     <a href="/services.html">Services</a>
+                    <a href="/whynative.html">Why Native?</a>
                     <a href="/portfolio.html">Portfolio</a>
                     <a href="/resources.html">Resources</a>
                     <a href="/contact.html">Contact</a>
@@ -42,8 +43,8 @@
 
                 <div id="links">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="/about.html">About</a>
                     <a href="/services.html">Services</a>
+                    <a href="/whynative.html">Why Native?</a>
                     <a href="/portfolio.html">Portfolio</a>
                     <a href="/resources.html">Resources</a>
                     <a href="/contact.html">Contact</a>
@@ -56,22 +57,47 @@
 
     <div id="container">
         <div id="main-text">
-            <p>
-                Backyard Botanicals is a small landscape design company that offers landscape design, plant procurement,
-                installation and seasonal maintenance for residential and commercial properties.
-                We specialize in the use of perennial plants, trees, and shrubs that are native to this region of
-                Kentucky.
-                Our designs are intuitive, vibrant and personalized.
-                We have a deep passion for native plants and the healthy ecology of our community.
-                It is our hope that through our work, we can share this passion with others by putting native plants in
-                backyard
-                gardens across the city.
-                <br>
-                <br>
-                Whether you want to add to an existing garden or create a whole new look for your overall landscape, we
-                can help you.
-                If you are interested in talking to us about your project, we would love to hear from you.
-            </p>
+            <h1>Resources</h1>
+            <br>
+            <br>
+            <h3><b>Books</b></h3>
+            <ul>
+                <li>Trees and Shrubs of Kentucky: Mary E. Wharton and Roger W. Barbour</li>
+                <li>A Guide to the Wildflowers and Ferns in Kentucky: Mary E Wharton and Roger W. Barbour</li>
+                <li>Bringing Nature Home- Doug Tallamy</li>
+                <li>Planting in a Post Wild World by Thomas Rainer and Claudia West</li>
+                <li>Pollinators of Native Plants- Heather Holm</li>
+                <li>Go Native!- Carolyn Harstad</li>
+                <li>The Naturalists Garden- Ruth Shaw Ernst</li>
+                <li>The Garden Awakening- Mary Reynold</li>
+                <li>The Humane Gardener- Nancy Lawson</li>
+                <li>The Native Habitat Garden- Ken Druse</li>
+                <li>The Landscaping Revolution- Andy and Sally Wasowski</li>
+                <li>Dan Pearson</li>
+                <li>Piet Oudolf</li>
+            </ul>
+            <br>
+            <h3><b>Plant Identification Websites</b></h3>
+            <ul>
+                <li>USDA Natural Resources Conservation Services: <a href="https://plants.sc.egov.usda.gov/java/" alt="USDA Natural Resources Conservation Services">Link</a></li>
+                <li>Missouri Botanical Garden - Plant Finder: <a href="http://www.missouribotanicalgarden.org/plantfinder/plantfindersearch.aspx" alt="Missouri Botanical Garden - Plant Finder">Link</a></li>
+                <li>Lady Bird Johnson Wildflower Center: <a href="https://www.wildflower.org/" alt="Lady Bird Johnson Wildflower Center">Link</a></li>
+                <li>National Wildlife Federation- Native Plant Finder: <a href="https://www.nwf.org/NativePlantFinder/" alt="National Wildlife Federation- Native Plant Finder">Link</a></li>
+            </ul>
+            <br>
+            <h3><b>Additional Resources and Native Plant Nurseries</b></h3>
+            <ul>
+                <li>Dropseed Native Plant Nursery: <a href="https://www.dropseednursery.com/" alt="Dropseed Native Plant Nursery">Link</a></li>
+                <li>Ironweed Nursery: <a href="https://www.ironweednursery.com/" alt="Ironweed Nursery">Link</a></li>
+                <li>Prairie Moon Nursery: <a href="https://www.prairiemoon.com/" alt="Prairie Moon Nursery">Link</a></li>
+                <li>Wild Ones Louisville: <a href="http://wildoneslouisville.org/" alt=">Wild Ones Louisville">Link</a></li>
+                <li>Wild Ones Lexington: <a href="http://lexington.wildones.org/" alt=">Wild Ones Lexington">Link</a></li>
+                <li>Kentucky Native Plant Society: <a href="https://www.knps.org/" alt=">Kentucky Native Plant Society">Link</a></li>
+                <li>Mt Cuba Center: <a href="https://mtcubacenter.org/" alt=">Mt Cuba Center">Link</a></li>
+                <li>Plant Native: <a href="http://www.plantnative.org/" alt=">Plant Native">Link</a></li>
+                <li>Debbie Roos: <a href="https://growingsmallfarms.ces.ncsu.edu/" alt=">Debbie Roos">Link</a></li>
+            </ul>
+
         </div>
     </div>
 
@@ -85,12 +111,12 @@
     </footer>
 
     <script>
-         function openNav() {
-        document.getElementById("links").style.width = "250px";
-      }
-      function closeNav() {
-        document.getElementById("links").style.width = "0";
-      }     
+        function openNav() {
+            document.getElementById("links").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("links").style.width = "0";
+        }     
     </script>
 </body>
 
