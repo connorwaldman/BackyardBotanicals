@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body {
   font-family: 'Work Sans', sans-serif;
@@ -89,7 +91,7 @@ a:active {
   overflow: hidden;
   white-space: nowrap;
   /* position: absolute; */
-  background-color: rgba(102, 98, 98, 0.342);
+  /* background-color: rgba(102, 98, 98, 0.342); */
 }
 
 #headerNav a {
@@ -147,10 +149,9 @@ a:active {
 }
 
 
-#imagebackground {
-    background-image: url("images/alleyhouse2-large.jpg");
-
-    min-height: 380px;
+.imagebackground {
+    
+    min-height: 280px;
   
     /* Center and scale the image nicely */
     background-position-y: center;
@@ -162,6 +163,31 @@ a:active {
     position: relative;
 }
 
+.index {
+  background-image: url("images/grass.jpg");
+}
+
+.services {
+  background-image: url("images/grass.jpg");
+}
+
+.whynative {
+  background-image: url("images/native_large.jpg");
+  background-position-y: -150px;
+}
+
+.portfolio {
+  background-image: url("images/alleyhouse2-large.jpg");
+}
+
+.resources {
+  background-image: url("images/grass.jpg");
+}
+
+.contact {
+  background-image: url("images/grass.jpg");
+}
+
 #container {
   padding-left: 10px;
   padding-right: 10px;
@@ -169,10 +195,48 @@ a:active {
   left: 0px;
 } 
 
+#container h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#container p, li {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+}
+
 #image-table {
   text-align: center;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+#about {
+  padding-top: 5%;
+  padding-bottom: 10%;
+  width: 75%;
+}
+
+#bio {
+  display: inline-block;
+}
+#bio p, h2, h5 {
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+#bio_pic {
+  float: left;
+  clear: left;
+  width: 50%;
+  padding-bottom: 20%;
+  margin-right: 20px;
+  height: auto;
+  background-image: url("images/bio.jpg");
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 300px;
 }
 
 .closebtn {
@@ -188,9 +252,11 @@ img {
   text-align: center;
 }
 
-h2 {
+h2, h5 {
   text-align: center;
 }
+
+
 
 footer {
   background-color: #394943;
