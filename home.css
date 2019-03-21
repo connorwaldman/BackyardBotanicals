@@ -152,6 +152,7 @@ a:active {
 .imagebackground {
     
     min-height: 280px;
+    max-height: 100px;
   
     /* Center and scale the image nicely */
     background-position-y: center;
@@ -173,7 +174,6 @@ a:active {
 
 .whynative {
   background-image: url("images/native_large.jpg");
-  background-position-y: -150px;
 }
 
 .portfolio {
@@ -189,13 +189,14 @@ a:active {
 }
 
 #container {
+  padding-top: 5%;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0px;
   left: 0px;
 } 
 
-#container h1, h2, h3 {
+#container h1, h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -214,6 +215,11 @@ a:active {
   padding-top: 5%;
   padding-bottom: 10%;
   width: 75%;
+  font-size: 22px;
+}
+
+#about p {
+  color: #3b3b3b;
 }
 
 #bio {
@@ -222,6 +228,10 @@ a:active {
 #bio p, h2, h5 {
   text-align: left;
   flex-wrap: wrap;
+}
+
+#bio p {
+  color: #2e2e2e;
 }
 
 #bio_pic {
@@ -238,6 +248,49 @@ a:active {
   background-size: contain;
   min-height: 300px;
 }
+
+#service-header {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.service-item {
+  display: table;
+}
+
+.service-pic {
+  float: left;
+  clear: left;
+  width: 33%;
+  margin: 20px;
+  height: auto;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+}
+
+.service-pic p {
+  color: #2e2e2e;
+}
+
+.consultation {
+  background-image: url("images/sketch3.jpg");
+}
+
+.drawings {
+  background-image: url("images/sketch3.jpg");
+}
+
+.installation {
+  background-image: url("images/installation2.jpg");
+}
+
+.maitenance {
+  background-image: url("images/maintenance.jpg");
+}
+
 
 .closebtn {
   position: absolute;
