@@ -27,27 +27,28 @@
 
             <div id="headerNav">
                 <div>
-                    <a href="/services.html">Services</a>
-                    <a href="/whynative.html">Why Native?</a>
-                    <a href="/portfolio.html">Portfolio</a>
-                    <a href="/resources.html">Resources</a>
-                    <a href="/contact.html">Contact</a>
+                    <a href="/index.html">ABOUT</a>
+                    <a href="/services.html">SERVICES</a>
+                    <a href="/whynative.html">WHY NATIVE?</a>
+                    <a href="/portfolio.html">PORTFOLIO</a>
+                    <a href="/resources.html">RESOURCES</a>
+                    <a href="/contact.html">CONTACT</a>
                 </div>
             </div>
 
             <div id="headerMobileNav">
 
-                <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <a href="javascript:void(0);" class="icon" onclick="navButton(this)">
                     <i class="material-icons light">menu</i>
                 </a>
 
                 <div id="links">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="/services.html">Services</a>
-                    <a href="/whynative.html">Why Native?</a>
-                    <a href="/portfolio.html">Portfolio</a>
-                    <a href="/resources.html">Resources</a>
-                    <a href="/contact.html">Contact</a>
+                    <a href="/index.html">ABOUT</a>
+                    <a href="/services.html">SERVICES</a>
+                    <a href="/whynative.html">WHY NATIVE?</a>
+                    <a href="/portfolio.html">PORTFOLIO</a>
+                    <a href="/resources.html">RESOURCES</a>
+                    <a href="/contact.html">CONTACT</a>
                 </div>
 
 
@@ -90,11 +91,22 @@
 
     <script>
         function openNav() {
-            document.getElementById("links").style.width = "250px";
+            document.getElementById("links").style.height = "215px";
         }
         function closeNav() {
-            document.getElementById("links").style.width = "0";
-        }     
+            document.getElementById("links").style.height = "0";
+        }
+
+        function navButton(x) {
+            if (x.classList.contains("change")) {
+                closeNav();
+                x.classList.remove("change");
+
+            } else {
+                openNav();
+                x.classList.add("change");
+            }
+        }
     </script>
 </body>
 

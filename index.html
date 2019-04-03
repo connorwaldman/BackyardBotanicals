@@ -28,27 +28,28 @@
 
       <div id="headerNav">
         <div>
-          <a href="/services.html">Services</a>
-          <a href="/whynative.html">Why Native?</a>
-          <a href="/portfolio.html">Portfolio</a>
-          <a href="/resources.html">Resources</a>
-          <a href="/contact.html">Contact</a>
+          <a href="/index.html">ABOUT</a>
+          <a href="/services.html">SERVICES</a>
+          <a href="/whynative.html">WHY NATIVE?</a>
+          <a href="/portfolio.html">PORTFOLIO</a>
+          <a href="/resources.html">RESOURCES</a>
+          <a href="/contact.html">CONTACT</a>
         </div>
       </div>
 
       <div id="headerMobileNav">
 
-        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+        <a href="javascript:void(0);" class="icon" onclick="navButton(this)">
           <i class="material-icons light">menu</i>
         </a>
 
         <div id="links">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="/services.html">Services</a>
-          <a href="/whynative.html">Why Native?</a>
-          <a href="/portfolio.html">Portfolio</a>
-          <a href="/resources.html">Resources</a>
-          <a href="/contact.html">Contact</a>
+          <a href="/index.html">ABOUT</a>
+          <a href="/services.html">SERVICES</a>
+          <a href="/whynative.html">WHY NATIVE?</a>
+          <a href="/portfolio.html">PORTFOLIO</a>
+          <a href="/resources.html">RESOURCES</a>
+          <a href="/contact.html">CONTACT</a>
         </div>
 
 
@@ -61,27 +62,30 @@
   <div id="container">
     <div id="main-text">
       <div id="about">
-      <h1>Backyard Botanicals</h1>
-      <p>
-        is a landscape design company offering landscape design, plant procurement, installation and
-        seasonal maintenance for residential and commercial properties. We specialize in the use of perennial plants,
-        trees and
-        shrubs that are native to this region of Kentucky. Our designs are intuitive, vibrant and personalized. We have
-        a deep
-        passion for native plants and the healthy ecology of our community. It is our hope that through our work, we can
-        share
-        this passion with others by planting native plants in backyard gardens across the city.
-        <br>
-        <br>
-        Whether you want to expand an existing garden or create a whole new look for your overall landscape, we can help
-        you. If
-        you’re interested in talking to us about your project, we would love to hear from you!
-      </p>
-    </div>
+        <h1 style="display: inline">Backyard Botanicals </h1>
+        <p style="display: inline">
+          is a landscape design company offering landscape design, plant procurement, installation and
+          seasonal maintenance for residential and commercial properties. We specialize in the use of perennial plants,
+          trees and
+          shrubs that are native to this region of Kentucky. Our designs are intuitive, vibrant and personalized. We
+          have
+          a deep
+          passion for native plants and the healthy ecology of our community. It is our hope that through our work, we
+          can
+          share
+          this passion with others by planting native plants in backyard gardens across the city.
+          <br>
+          <br>
+          Whether you want to expand an existing garden or create a whole new look for your overall landscape, we can
+          help
+          you. If
+          you’re interested in talking to us about your project, we would love to hear from you!
+        </p>
+      </div>
 
       <div id="bio">
-        
-        <div id="bio_pic"> 
+
+        <div id="bio_pic">
           <!-- <img id="bio_pic" src="images/bio.jpg" srcset="images/bio.jpg 1x" alt="bio"> -->
         </div>
 
@@ -125,11 +129,22 @@
 
   <script>
     function openNav() {
-      document.getElementById("links").style.width = "250px";
+      document.getElementById("links").style.height = "215px";
     }
     function closeNav() {
-      document.getElementById("links").style.width = "0";
-    }        
+      document.getElementById("links").style.height = "0";
+    }       
+
+     function navButton(x) {
+            if (x.classList.contains("change")) {
+                closeNav();
+                x.classList.remove("change");
+
+            } else {
+                openNav();
+                x.classList.add("change");
+            }
+        } 
   </script>
 </body>
 
