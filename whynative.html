@@ -28,27 +28,28 @@
 
             <div id="headerNav">
                 <div>
-                    <a href="/services.html">Services</a>
-                    <a href="/whynative.html">Why Native?</a>
-                    <a href="/portfolio.html">Portfolio</a>
-                    <a href="/resources.html">Resources</a>
-                    <a href="/contact.html">Contact</a>
+                    <a href="/index.html">ABOUT</a>
+                    <a href="/services.html">SERVICES</a>
+                    <a href="/whynative.html">WHY NATIVE?</a>
+                    <a href="/portfolio.html">PORTFOLIO</a>
+                    <a href="/resources.html">RESOURCES</a>
+                    <a href="/contact.html">CONTACT</a>
                 </div>
             </div>
 
             <div id="headerMobileNav">
 
-                <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <a href="javascript:void(0);" class="icon" onclick="navButton(this)">
                     <i class="material-icons light">menu</i>
                 </a>
 
                 <div id="links">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="/services.html">Services</a>
-                    <a href="/whynative.html">Why Native?</a>
-                    <a href="/portfolio.html">Portfolio</a>
-                    <a href="/resources.html">Resources</a>
-                    <a href="/contact.html">Contact</a>
+                    <a href="/index.html">ABOUT</a>
+                    <a href="/services.html">SERVICES</a>
+                    <a href="/whynative.html">WHY NATIVE?</a>
+                    <a href="/portfolio.html">PORTFOLIO</a>
+                    <a href="/resources.html">RESOURCES</a>
+                    <a href="/contact.html">CONTACT</a>
                 </div>
 
 
@@ -60,35 +61,50 @@
 
     <div id="container">
         <div id="main-text">
-                <h1>Why Native?</h1>
-                <p>What is a native plant? “Native plants should be defined as those that have evolved and adapted to a specific
-                  location and have remained genetically unaltered by humans. “[1] As native plants evolve and adapt to a specific
-                  location, so does the wildlife, creating a symbiotic relationship that forms healthy local ecosystems.
-                  <br>
-                  <br>
-                  Among the many benefits of native plants are their adaptability to our climate and soil, their great performance in the
-                  garden without the need for pesticides or fertilizers, and, most importantly, the food and habitat they provide for our
-                  native pollinators, butterflies and birds.
-                  <br>
-                  <br>
-                  Native landscaping includes a wide variety of plant species to support and provide nutrients to a diverse array of
-                  pollinators, birds and butterflies. Many native pollinators and butterflies are referred to as “diet specialists” and
-                  can only feed on or pollinate one or several host plants. For example, there is a growing awareness of the crisis of the
-                  monarch butterfly caused by the destruction of habitat that once flourished with milkweed, their native host plant. Like
-                  the monarch butterfly, thousands of butterflies, moths, insects and birds have a similar symbiotic relationship with the
-                  plants, trees and shrubs native to our area.
-                  <br>
-                  <br>
-                  Pollinators, which includes bees, wasps, insects, moths and butterflies, require a diverse array of plant species that
-                  bloom throughout the season. Plants that produce pollen and nectar early in the season, like violets and woodland
-                  wildflowers, need to be included alongside summer and fall blooming plants, like coneflowers, asters and goldenrods. The
-                  inclusion of trees and shrubs provides early pollen with their blooms, attractive leaves for caterpillars, and edible
-                  fruit in the fall for our native birds. A backyard designed with true natives provides a healthy, nutritious habitat to
-                  our birds, bees, and butterflies. And for us, we get to enjoy the beauty and watch it all unfold.
-                  <br>
-                  <br>
-                  <i>[1] Wasowski, Andy. "Provenance, defining our terms.(native plants)." The American Gardener 77.6 (Nov-Dec 1998): NA.</i>  
-                </p>
+            <h1>Why Native?</h1>
+            <p>What is a native plant? “Native plants should be defined as those that have evolved and adapted to a
+                specific
+                location and have remained genetically unaltered by humans. “[1] As native plants evolve and adapt to a
+                specific
+                location, so does the wildlife, creating a symbiotic relationship that forms healthy local ecosystems.
+                <br>
+                <br>
+                Among the many benefits of native plants are their adaptability to our climate and soil, their great
+                performance in the
+                garden without the need for pesticides or fertilizers, and, most importantly, the food and habitat they
+                provide for our
+                native pollinators, butterflies and birds.
+                <br>
+                <br>
+                Native landscaping includes a wide variety of plant species to support and provide nutrients to a
+                diverse array of
+                pollinators, birds and butterflies. Many native pollinators and butterflies are referred to as “diet
+                specialists” and
+                can only feed on or pollinate one or several host plants. For example, there is a growing awareness of
+                the crisis of the
+                monarch butterfly caused by the destruction of habitat that once flourished with milkweed, their native
+                host plant. Like
+                the monarch butterfly, thousands of butterflies, moths, insects and birds have a similar symbiotic
+                relationship with the
+                plants, trees and shrubs native to our area.
+                <br>
+                <br>
+                Pollinators, which includes bees, wasps, insects, moths and butterflies, require a diverse array of
+                plant species that
+                bloom throughout the season. Plants that produce pollen and nectar early in the season, like violets and
+                woodland
+                wildflowers, need to be included alongside summer and fall blooming plants, like coneflowers, asters and
+                goldenrods. The
+                inclusion of trees and shrubs provides early pollen with their blooms, attractive leaves for
+                caterpillars, and edible
+                fruit in the fall for our native birds. A backyard designed with true natives provides a healthy,
+                nutritious habitat to
+                our birds, bees, and butterflies. And for us, we get to enjoy the beauty and watch it all unfold.
+                <br>
+                <br>
+                <i>[1] Wasowski, Andy. "Provenance, defining our terms.(native plants)." The American Gardener 77.6
+                    (Nov-Dec 1998): NA.</i>
+            </p>
         </div>
     </div>
 
@@ -103,11 +119,22 @@
 
     <script>
         function openNav() {
-            document.getElementById("links").style.width = "250px";
+            document.getElementById("links").style.height = "215px";
         }
         function closeNav() {
-            document.getElementById("links").style.width = "0";
+            document.getElementById("links").style.height = "0";
         }     
+
+        function navButton(x) {
+            if (x.classList.contains("change")) {
+                closeNav();
+                x.classList.remove("change");
+
+            } else {
+                openNav();
+                x.classList.add("change");
+            }
+        }
     </script>
 </body>
 

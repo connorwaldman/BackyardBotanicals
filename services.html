@@ -28,27 +28,28 @@
 
       <div id="headerNav">
         <div>
-          <a href="/services.html">Services</a>
-          <a href="/whynative.html">Why Native?</a>
-          <a href="/portfolio.html">Portfolio</a>
-          <a href="/resources.html">Resources</a>
-          <a href="/contact.html">Contact</a>
+          <a href="/index.html">ABOUT</a>
+          <a href="/services.html">SERVICES</a>
+          <a href="/whynative.html">WHY NATIVE?</a>
+          <a href="/portfolio.html">PORTFOLIO</a>
+          <a href="/resources.html">RESOURCES</a>
+          <a href="/contact.html">CONTACT</a>
         </div>
       </div>
 
       <div id="headerMobileNav">
 
-        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+        <a href="javascript:void(0);" class="icon" onclick="navButton(this)">
           <i class="material-icons light">menu</i>
         </a>
 
         <div id="links">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="/services.html">Services</a>
-          <a href="/whynative.html">Why Native?</a>
-          <a href="/portfolio.html">Portfolio</a>
-          <a href="/resources.html">Resources</a>
-          <a href="/contact.html">Contact</a>
+          <a href="/index.html">ABOUT</a>
+          <a href="/services.html">SERVICES</a>
+          <a href="/whynative.html">WHY NATIVE?</a>
+          <a href="/portfolio.html">PORTFOLIO</a>
+          <a href="/resources.html">RESOURCES</a>
+          <a href="/contact.html">CONTACT</a>
         </div>
       </div>
     </div>
@@ -63,7 +64,7 @@
       <div class="service-item si1">
         <div class="service-pic consultation"></div>
 
-        <h3>Design Consulatations</h3>
+        <h2>Design Consulatations</h4>
         <p>Consultations will take place at your home in your garden. We encourage clients to gather photographs of
           garden
           designs that appeal to them to give us an idea of their desired style. The consultation will take
@@ -86,7 +87,7 @@
       <div class="service-item si2">
         <div class="service-pic drawings"></div>
 
-        <h3>Design Drawings</h3>
+        <h2>Design Drawings</h2>
         <p>The design drawing allows for more thoughtful creativity in the design process. We will prepare a scaled
           drawing with
           plant, tree and shrub species selected for each area of the landscaping. If there is additional interest in
@@ -104,7 +105,7 @@
       <div class="service-item si3">
         <div class="service-pic installation"></div>
 
-        <h3>Installation</h3>
+        <h2>Installation</h2>
         <p>The installation process includes any removal of existing landscaping, site preparation, and procurement and
           installation of plants, trees, and shrubs. Oversight for any contracted work such as hardscaping or carpentry
           is
@@ -115,7 +116,7 @@
       <div class="service-item si4">
         <div class="service-pic maitenance"></div>
 
-        <h3>Maitenance</h3>
+        <h2>Maitenance</h2>
         <p>Maintenance can include mulching, weeding, pruning, dividing and transplanting perennials, and replacement
           planting.
           This can be scheduled on a weekly, monthly or seasonal basis based on the size of the garden and the client’s
@@ -140,11 +141,22 @@
 
   <script>
     function openNav() {
-      document.getElementById("links").style.width = "250px";
+      document.getElementById("links").style.height = "215px";
     }
     function closeNav() {
-      document.getElementById("links").style.width = "0";
-    }        
+      document.getElementById("links").style.height = "0";
+    }    
+
+     function navButton(x) {
+            if (x.classList.contains("change")) {
+                closeNav();
+                x.classList.remove("change");
+
+            } else {
+                openNav();
+                x.classList.add("change");
+            }
+        }    
   </script>
 </body>
 

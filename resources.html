@@ -27,27 +27,28 @@
 
             <div id="headerNav">
                 <div>
-                    <a href="/services.html">Services</a>
-                    <a href="/whynative.html">Why Native?</a>
-                    <a href="/portfolio.html">Portfolio</a>
-                    <a href="/resources.html">Resources</a>
-                    <a href="/contact.html">Contact</a>
+                    <a href="/index.html">ABOUT</a>
+                    <a href="/services.html">SERVICES</a>
+                    <a href="/whynative.html">WHY NATIVE?</a>
+                    <a href="/portfolio.html">PORTFOLIO</a>
+                    <a href="/resources.html">RESOURCES</a>
+                    <a href="/contact.html">CONTACT</a>
                 </div>
             </div>
 
             <div id="headerMobileNav">
 
-                <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <a href="javascript:void(0);" class="icon" onclick="navButton(this)">
                     <i class="material-icons light">menu</i>
                 </a>
 
                 <div id="links">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="/services.html">Services</a>
-                    <a href="/whynative.html">Why Native?</a>
-                    <a href="/portfolio.html">Portfolio</a>
-                    <a href="/resources.html">Resources</a>
-                    <a href="/contact.html">Contact</a>
+                    <a href="/index.html">ABOUT</a>
+                    <a href="/services.html">SERVICES</a>
+                    <a href="/whynative.html">WHY NATIVE?</a>
+                    <a href="/portfolio.html">PORTFOLIO</a>
+                    <a href="/resources.html">RESOURCES</a>
+                    <a href="/contact.html">CONTACT</a>
                 </div>
 
             </div>
@@ -73,29 +74,29 @@
                 <li>The Humane Gardener- Nancy Lawson</li>
                 <li>The Native Habitat Garden- Ken Druse</li>
                 <li>The Landscaping Revolution- Andy and Sally Wasowski</li>
-                <li>Dan Pearson</li>
-                <li>Piet Oudolf</li>
+                <li>Works by Dan Pearson</li>
+                <li>Works by Piet Oudolf</li>
             </ul>
             <br>
             <h3><b>Plant Identification Websites</b></h3>
             <ul>
-                <li>USDA Natural Resources Conservation Services: <a href="https://plants.sc.egov.usda.gov/java/" alt="USDA Natural Resources Conservation Services">Link</a></li>
-                <li>Missouri Botanical Garden - Plant Finder: <a href="http://www.missouribotanicalgarden.org/plantfinder/plantfindersearch.aspx" alt="Missouri Botanical Garden - Plant Finder">Link</a></li>
-                <li>Lady Bird Johnson Wildflower Center: <a href="https://www.wildflower.org/" alt="Lady Bird Johnson Wildflower Center">Link</a></li>
-                <li>National Wildlife Federation- Native Plant Finder: <a href="https://www.nwf.org/NativePlantFinder/" alt="National Wildlife Federation- Native Plant Finder">Link</a></li>
+                <li><a href="https://plants.sc.egov.usda.gov/java/" alt="USDA Natural Resources Conservation Services">USDA Natural Resources Conservation Services</a></li>
+                <li><a href="http://www.missouribotanicalgarden.org/plantfinder/plantfindersearch.aspx" alt="Missouri Botanical Garden - Plant Finder">Missouri Botanical Garden - Plant Finder</a></li>
+                <li><a href="https://www.wildflower.org/" alt="Lady Bird Johnson Wildflower Center">Lady Bird Johnson Wildflower Center</a></li>
+                <li><a href="https://www.nwf.org/NativePlantFinder/" alt="National Wildlife Federation- Native Plant Finder">National Wildlife Federation- Native Plant Finder</a></li>
             </ul>
             <br>
             <h3><b>Additional Resources and Native Plant Nurseries</b></h3>
             <ul>
-                <li>Dropseed Native Plant Nursery: <a href="https://www.dropseednursery.com/" alt="Dropseed Native Plant Nursery">Link</a></li>
-                <li>Ironweed Nursery: <a href="https://www.ironweednursery.com/" alt="Ironweed Nursery">Link</a></li>
-                <li>Prairie Moon Nursery: <a href="https://www.prairiemoon.com/" alt="Prairie Moon Nursery">Link</a></li>
-                <li>Wild Ones Louisville: <a href="http://wildoneslouisville.org/" alt=">Wild Ones Louisville">Link</a></li>
-                <li>Wild Ones Lexington: <a href="http://lexington.wildones.org/" alt=">Wild Ones Lexington">Link</a></li>
-                <li>Kentucky Native Plant Society: <a href="https://www.knps.org/" alt=">Kentucky Native Plant Society">Link</a></li>
-                <li>Mt Cuba Center: <a href="https://mtcubacenter.org/" alt=">Mt Cuba Center">Link</a></li>
-                <li>Plant Native: <a href="http://www.plantnative.org/" alt=">Plant Native">Link</a></li>
-                <li>Debbie Roos: <a href="https://growingsmallfarms.ces.ncsu.edu/" alt=">Debbie Roos">Link</a></li>
+                <li><a href="https://www.dropseednursery.com/" alt="Dropseed Native Plant Nursery">Dropseed Native Plant Nursery</a></li>
+                <li><a href="https://www.ironweednursery.com/" alt="Ironweed Nursery">Ironweed Nursery</a></li>
+                <li><a href="https://www.prairiemoon.com/" alt="Prairie Moon Nursery">Prairie Moon Nursery</a></li>
+                <li><a href="http://wildoneslouisville.org/" alt=">Wild Ones Louisville">Wild Ones Louisville</a></li>
+                <li><a href="http://lexington.wildones.org/" alt=">Wild Ones Lexington">Wild Ones Lexington</a></li>
+                <li><a href="https://www.knps.org/" alt=">Kentucky Native Plant Society">Kentucky Native Plant Society</a></li>
+                <li><a href="https://mtcubacenter.org/" alt=">Mt Cuba Center">Mt Cuba Center</a></li>
+                <li><a href="http://www.plantnative.org/" alt=">Plant Native">Plant Native</a></li>
+                <li><a href="https://growingsmallfarms.ces.ncsu.edu/" alt=">Debbie Roos">Debbie Roos</a></li>
             </ul>
 
         </div>
@@ -112,11 +113,22 @@
 
     <script>
         function openNav() {
-            document.getElementById("links").style.width = "250px";
+            document.getElementById("links").style.height = "215px";
         }
         function closeNav() {
-            document.getElementById("links").style.width = "0";
+            document.getElementById("links").style.height = "0";
         }     
+
+        function navButton(x) {
+            if (x.classList.contains("change")) {
+                closeNav();
+                x.classList.remove("change");
+
+            } else {
+                openNav();
+                x.classList.add("change");
+            }
+        }
     </script>
 </body>
 

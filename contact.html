@@ -28,27 +28,28 @@
 
             <div id="headerNav">
                 <div>
-                    <a href="/services.html">Services</a>
-                    <a href="/whynative.html">Why Native?</a>
-                    <a href="/portfolio.html">Portfolio</a>
-                    <a href="/resources.html">Resources</a>
-                    <a href="/contact.html">Contact</a>
+                    <a href="/index.html">ABOUT</a>
+                    <a href="/services.html">SERVICES</a>
+                    <a href="/whynative.html">WHY NATIVE?</a>
+                    <a href="/portfolio.html">PORTFOLIO</a>
+                    <a href="/resources.html">RESOURCES</a>
+                    <a href="/contact.html">CONTACT</a>
                 </div>
             </div>
 
             <div id="headerMobileNav">
 
-                <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <a href="javascript:void(0);" class="icon" onclick="navButton(this)">
                     <i class="material-icons light">menu</i>
                 </a>
 
                 <div id="links">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="/services.html">Services</a>
-                    <a href="/whynative.html">Why Native?</a>
-                    <a href="/portfolio.html">Portfolio</a>
-                    <a href="/resources.html">Resources</a>
-                    <a href="/contact.html">Contact</a>
+                    <a href="/index.html">ABOUT</a>
+                    <a href="/services.html">SERVICES</a>
+                    <a href="/whynative.html">WHY NATIVE?</a>
+                    <a href="/portfolio.html">PORTFOLIO</a>
+                    <a href="/resources.html">RESOURCES</a>
+                    <a href="/contact.html">CONTACT</a>
                 </div>
 
 
@@ -59,32 +60,29 @@
     </div>
 
     <div id="container">
-        <div id="contact-info">
-            <p> <strong>phone</strong>: (502) 555-5555<br> </p>
-            <p> <strong>email</strong>: backyardbotanicalsky@gmail.com<br> </p>
-            <p> <strong>address</strong>:<br> </p>
+        <div id="main-text">
+            <div id="contact-info">
+                <h1>Contact Us</h1>
+                <br>
+                <p>(502) 309-9092</p>
+                <p><a href="mailto:backyardbotanicalsky@gmail.com?subject=Backyard Botanicals Inquiry">backyardbotanicalsky@gmail.com</a></p>
+            </div>
+
+            <!-- <form method="POST" id="form-email">
+
+                <legend>Contact Info</legend>
+                <label for="frmNameA">Name</label>
+                <input type="text" name="name" id="frmNameA" placeholder="Full name" required autocomplete="name">
+
+                <label for="frmEmailA">Email</label>
+                <input type="email" name="email" id="frmEmailA" placeholder="name@example.com" required
+                    autocomplete="email">
+
+            </form> -->
+
         </div>
 
-        <form method="POST" id="form-email">
-
-            <legend>Contact Info</legend>
-            <!-- // [START autocomplete] -->
-            <label for="frmNameA">Name</label>
-            <input type="text" name="name" id="frmNameA" placeholder="Full name" required autocomplete="name">
-
-            <label for="frmEmailA">Email</label>
-            <input type="email" name="email" id="frmEmailA" placeholder="name@example.com" required
-                autocomplete="email">
-
-
-
-
-        </form>
-
-    </div>
-
-    <div id="form-schedule">
-
+        <div id="form-schedule"></div>
     </div>
     </div>
 
@@ -99,11 +97,22 @@
 
     <script>
         function openNav() {
-            document.getElementById("links").style.width = "250px";
+            document.getElementById("links").style.height = "215px";
         }
         function closeNav() {
-            document.getElementById("links").style.width = "0";
+            document.getElementById("links").style.height = "0";
         }     
+
+        function navButton(x) {
+            if (x.classList.contains("change")) {
+                closeNav();
+                x.classList.remove("change");
+
+            } else {
+                openNav();
+                x.classList.add("change");
+            }
+        }
     </script>
 </body>
 
