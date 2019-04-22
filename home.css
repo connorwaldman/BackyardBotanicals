@@ -51,8 +51,9 @@ a:active {
 
 #main-header {
   text-decoration: none;
+  background-color: #394943;
   /* background: transparent;  */
-  padding: 20px 0;
+  padding: 25px 0;
   width: 100%;
   /* -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -78,9 +79,14 @@ a:active {
     text-align: left;
     white-space: nowrap;
     text-decoration: bold;
-   
   }
   
+#logo p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  color: rgb(241, 255, 43);
+  line-height: 0px;
+}
 
 #headerNav {
   font-family: 'lato', sans-serif;
@@ -125,7 +131,7 @@ a:active {
     position: fixed;
     width: 250;
     transition: 0.5s;
-    height: inherit;
+    height: 0;
     z-index: 1;
     right: 0;
     /* top: 0; */
@@ -153,7 +159,7 @@ a:active {
 
 .imagebackground {
     
-    min-height: 280px;
+    min-height: 400px;
     max-height: 100px;
   
     /* Center and scale the image nicely */
@@ -163,23 +169,20 @@ a:active {
     background-size: cover;
   
     /* Needed to position the navbar */
-    position: relative;
+    position: bottom;
 
 }
 
 .index {
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  ), url("images/grass.jpg");
+  background-image: url("images/grass.jpg");
 }
 
 .services {
-  background-image: url("images/caterpillar.jpg");
+  background-image: url("images/native_small.jpg");
 }
 
 .whynative {
-  background-image: url("images/native_large.jpg");
+  background-image: url("images/caterpillar.jpg");
 }
 
 .portfolio {
@@ -230,16 +233,18 @@ a:active {
   text-align: justify;
 }
 
+#about h1 {
+ line-height: 45px;
+}
+
 #about p {
   color: #3b3b3b;
-  
 }
 
 #bio {
   display: inline-block;
 }
 #bio p, h2, h5 {
-  
   flex-wrap: wrap;
 }
 
@@ -299,7 +304,7 @@ a:active {
 }
 
 .consultation {
-  background-image: url("images/sketch3.jpg");
+  background-image: url("images/consultation1.jpg");
 }
 
 .drawings {
@@ -383,13 +388,17 @@ footer {
   color: white;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     #headerNav {
       display: none;
     }
 
     #headerMobileNav {
       display: table-cell;
+    }
+
+    #main-header {
+      min-height: 55px;
     }
 
     #headerMobileNav a {
@@ -399,7 +408,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 1000px) {
   #headerMobileNav {
     display: none;
   }
@@ -414,7 +423,7 @@ footer {
 }
 
 @media (min-width: 200px) {
-  #i1, #i2, #i3, #i4, #i5 {
+  #i1, #i2, #i3, #i4, #i5, #i6, #i7 {
     width: 100%;
     height: auto;
     margin-left: auto;
@@ -422,9 +431,9 @@ footer {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   #i1  {
-    width: 75%;
+    width: 23.75%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -437,8 +446,8 @@ footer {
     margin-right: auto;
   }
 
-  #i5 {
-    width: 75%;
+  #i5, #i6, #i7 {
+    width: 23.75%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
